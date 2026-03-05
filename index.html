@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mohamed Magdy | Web Developer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:#fff;
+    scroll-behavior:smooth;
+}
+
+section{
+    padding:100px 10%;
+}
+
+h1,h2,h3{
+    font-weight:600;
+}
+
+.highlight{
+    color:#38bdf8;
+}
+
+/* NAVBAR */
+
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    padding:20px 10%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(15,23,42,0.8);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#fff;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#38bdf8;
+}
+
+/* HERO */
+
+.hero{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.hero h1{
+    font-size:55px;
+}
+
+.hero p{
+    margin:20px 0;
+    font-size:20px;
+    color:#cbd5e1;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 30px;
+    background:#38bdf8;
+    color:#000;
+    text-decoration:none;
+    font-weight:600;
+    border-radius:30px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#0ea5e9;
+    transform:scale(1.05);
+}
+
+/* ABOUT */
+
+.about{
+    background:#1e293b;
+    border-radius:20px;
+}
+
+.about p{
+    margin-top:20px;
+    line-height:1.8;
+    color:#cbd5e1;
+}
+
+/* SKILLS */
+
+.skills-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.skill{
+    background:#1e293b;
+    padding:30px;
+    text-align:center;
+    border-radius:20px;
+    transition:0.3s;
+}
+
+.skill:hover{
+    transform:translateY(-10px);
+    background:#334155;
+}
+
+/* PROJECTS */
+
+.projects{
+    background:#1e293b;
+    border-radius:20px;
+}
+
+.project-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.project{
+    background:#0f172a;
+    padding:20px;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.project:hover{
+    transform:scale(1.05);
+}
+
+.project h3{
+    margin-bottom:10px;
+}
+
+/* CONTACT */
+
+.contact{
+    text-align:center;
+}
+
+.contact a{
+    color:#38bdf8;
+    text-decoration:none;
+}
+
+footer{
+    text-align:center;
+    padding:20px;
+    background:#0f172a;
+    color:#64748b;
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:35px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h3>Mohamed<span class="highlight">.</span></h3>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <h1>Hi, I'm <span class="highlight">Mohamed Magdy</span></h1>
+    <p>Web Developer | Data Analyst | Machine Learning Enthusiast</p>
+    <a href="#projects" class="btn">View My Work</a>
+</section>
+
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+        I am a passionate developer specializing in building modern, responsive websites 
+        and data-driven solutions. I focus on clean code, performance optimization, 
+        and creating digital experiences that deliver real business value.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+        <div class="skill">HTML5</div>
+        <div class="skill">CSS3</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Bootstrap</div>
+        <div class="skill">Power BI</div>
+        <div class="skill">Python</div>
+        <div class="skill">Machine Learning</div>
+        <div class="skill">Data Analysis</div>
+    </div>
+</section>
+
+<section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+        <div class="project">
+            <h3>Clothing Store Website</h3>
+            <p>E-commerce frontend built with HTML & CSS.</p>
+        </div>
+        <div class="project">
+            <h3>Used Cars Data Analysis</h3>
+            <p>Linear & Polynomial Regression Model.</p>
+        </div>
+        <div class="project">
+            <h3>Breast Cancer Classification</h3>
+            <p>Logistic Regression ML Model.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: mohamed@example.com</p>
+    <p>LinkedIn: <a href="#">linkedin.com/in/mohamed</a></p>
+    <p>GitHub: <a href="#">github.com/mohamed</a></p>
+</section>
+
+<footer>
+    © 2026 Mohamed Magdy. All Rights Reserved.
+</footer>
+
+</body>
+</html>
